@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import './App.css'
 
 function App() {
   return (
     <>
-      <header>
+      <header className="main-header">
         <h1>📘 The Code Magazine</h1>
         <nav>
           <Link to="/blog">Blog</Link>
