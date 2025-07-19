@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   return (
-    <>
+    <div className="container">
       <header className="main-header">
         <h1>📘 The Code Magazine</h1>
         <nav>
@@ -14,10 +14,10 @@ function App() {
         </nav>
       </header>
       <article>
-        <header>
+        <header className="post_header">
           <h2>The Basic Language of the Web: HTML</h2>
           <img src="/img/laura-jones.jpg" alt="" width={50} height={50} />
-          <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+          <p className="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
           <img src="/img/post-img.jpg" alt="HTML code on a screen" width={500} height={200} />
         </header>
         <p>
@@ -41,7 +41,7 @@ function App() {
           <li>The closing tag</li>
           <li>The actual element</li>
         </ol>
-        <p>You can learn more at <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs.</a></p>
+        <p>You can learn more at <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs.</Link></p>
         <h3>Why should you learn HTML?</h3>
         <ul>
           <li>To be able to use the fundamental web dev language</li>
@@ -73,7 +73,8 @@ function App() {
         </ul>
       </aside>
       <footer>Copyright © 2027 by The Code Magazine.</footer>
-    </>
+      <button className="article_button">Like <span className="">♥</span></button>
+    </div>
   );
 }
 
